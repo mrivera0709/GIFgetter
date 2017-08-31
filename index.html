@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<!-- ========================================================================== -->
+<!-- ///////////////////////////////////HEAD/////////////////////////////////// -->
+<!-- ========================================================================== -->
+	<head>
+	
+<!-- === META TAGS ============================================================ -->
+	
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title> GIFgetter </title>
+		
+<!-- === BOOTSTRAP ============================================================ -->
+	
+		<link 
+		rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">
+		
+<!-- === CSS ================================================================== -->
+
+		<link rel = "stylesheet" type = "text/css" href = "assets/style.css" />
+		
+<!-- === GOOGLE FONTS ========================================================= -->
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans+Condensed:700|Open+Sans:300|Permanent+Marker|Raleway:100|Roboto+Condensed:700|Syncopate:700" rel="stylesheet">
+		
+	</head>
+<!-- ========================================================================== -->
+<!-- ///////////////////////////////////BODY/////////////////////////////////// -->
+<!-- ========================================================================== -->
+	<body>
+		<container>	
+		
+<!-- === UPPER CONTACT ======================================================== -->
+		
+		<div class=row id=headerRow>
+			
+			<div class=col-md-4 id=title> 
+				<p id=title1>GIF</p> <p id=title2> getter </p> 
+			</div>
+			  
+			<div class=col-md-8 id=search>
+			
+				<div class="row blank"> </div>
+				
+				<div class="row">
+					
+					<form id="gif-form">
+	      		<input type="text" id="gif-input" placeholder="Search Gifs"><br>
+	      		<input id="add-gif" type="submit" value="SEARCH">
+	    		</form>
+	    		
+	    		<button type="button" id=refresh class="btn btn-default" aria-label="Refresh">
+  					<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+					</button>
+	    		
+	    	</div>	
+  		
+  			<div class="row blank"> </div>
+  			
+  		</div>
+						
+		</div>
+				
+		<div class=row id=back> 
+		
+<!-- === LEFT CONTENT ========================================================= -->
+
+			<div class=col-md-4 id=leftSide>
+				
+				<div class="row leftRows topBlank"> </div>
+				
+				<div class="row leftRows"> 																	
+					
+					<div class=col-md-12 id=searchButtons>
+								
+						<button type="button" id=trending class="btn btn-default"> TRENDING </button>
+						<div id="buttons-view"></div>
+						
+					</div>
+
+				</div>
+				
+				<div class="row leftRows blank">
+					<footer> <strong>Copyright 2017</strong> Misael Rivera </footer>	
+				</div> 
+		
+			</div> 
+			
+<!-- === RIGHT CONTENT ======================================================== -->
+			
+			<div class=col-md-8 id=rightSide>
+				
+				<div class="row topBlank" id=rightBlank> </div>
+					
+				<div class=row> 																	
+					
+					<!-- gifs -->
+					<div class=col-md-12 id=rightContent> 
+						<p id=description>
+							 Select a topic or create a new topic above. 
+						</p>
+					</div>  
+						
+				</div>
+					
+<!-- === FOOTER =============================================================== -->
+			
+			<!-- Close right side -->				
+			</div> 	
+		
+		<!-- Close Initial Row -->	
+		</div> 		
+	
+		</container>
+		
+<!-- === JAVASCRIPT =========================================================== -->
+
+		<script 
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+		</script>
+		
+		<script 
+			type="text/javascript" 
+			src="assets/javascript/game.js">
+		</script>
+
+	</body>
+</html>
+<!-- ========================================================================== -->
+<!-- ////////////////////////////////////////////////////////////////////////// -->
+<!-- ========================================================================== -->
