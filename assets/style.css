@@ -383,13 +383,13 @@ footer
 	
 @media only screen and (max-width: 990px) 
 	{
-     #headerRow
-    	{
-    	padding:15px 30px;
-    	padding-bottom: 25px
-    	}
+		#headerRow
+			{
+			padding:15px 30px;
+			padding-bottom: 25px
+			}
     
-    #add-gif
+    	#add-gif
 			{
 			position:relative;
 			top:-5px;
@@ -460,19 +460,20 @@ footer
 
 @media only screen and (max-width: 468px) 
 	{
-    #trending
+    	#trending
 			{
-			width:98%;
+			width:97%;
 			padding:15px;
+			
 			}
     
-    #gif-input
-    	{
-		width:60%;
+    	#gif-input
+    		{
+			width:60%;
 		
-    	}
+    		}
     
-    #add-gif
+    	#add-gif
 			{
 			position:relative;
 			top:-5px;
@@ -481,7 +482,8 @@ footer
 			
 		#refresh
 			{
-			width:30px
+			width:30px;
+			
 			}	
 		
 		.topBlank
@@ -527,13 +529,13 @@ footer
 	
 @media only screen and (max-width: 387px) 
 	{
-    #headerRow
-    	{
-    	padding:15px;
-    	padding-bottom: 15px
-    	}
+		#headerRow
+			{
+			padding:15px;
+			padding-bottom: 15px
+			}
     	
-	#title1, #title2
+		#title1, #title2
 			{
 			font-size:3em;
 			position:relative;
