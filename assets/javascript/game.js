@@ -197,7 +197,7 @@ $(document).on('click', '.gifImage', gifPlay);
 $(document).on('click', '#trending', function()
 	{
 	// AJAX call triggered when the trending button is clicked
-	var trendingURL = "http://api.giphy.com/v1/gifs/trending?api_key=a4ccf65cb57740069f952abd8f4ec36c" + "&limit=10";
+	var trendingURL = "https://api.giphy.com/v1/gifs/trending?api_key=a4ccf65cb57740069f952abd8f4ec36c" + "&limit=10";
     $.ajax(
     	{
       url: trendingURL,
