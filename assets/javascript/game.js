@@ -201,52 +201,52 @@ $(document).on('click', '#trending', function()
 	var trendingURL = "https://api.giphy.com/v1/gifs/trending?api_key=a4ccf65cb57740069f952abd8f4ec36c&limit=10";
     $.ajax(
     	{
-      url: trendingURL,
-      method: 'GET'
+      	url: trendingURL,
+      	method: 'GET'
     	})
     	.done(function(trendingResponse) 
     		{
-      	console.log(trendingResponse);
+      		console.log(trendingResponse);
     		
 // LOOP THROUGH ARRAY ==============================================================
 								
-				var results = trendingResponse.data;
+			var results = trendingResponse.data;
 				
-				//emtpy div to ensure previous gifs remain
-		      $('#rightContent').empty();
+			//emtpy div to ensure previous gifs remain
+		    $('#rightContent').empty();
 		      
-		      for (var i = 0; i < results.length; i++) 
+		    for (var i = 0; i < results.length; i++) 
 		      	{
-			      // Creating a div to hold the gif
-			      var gifDiv = $("<div>").addClass("gifDiv");
+			    // Creating a div to hold the gif
+			    var gifDiv = $("<div>").addClass("gifDiv");
 	     		
 // RATING ==========================================================================
-			      // Storing the rating data
-			      var rating = results[i].rating;
+			    // Storing the rating data
+			    var rating = results[i].rating;
 			      
-			      // Creating an element to have the rating displayed
-			      var pOne = $("<p>").text("Rating: " + rating).attr("class", "rating");
+			    // Creating an element to have the rating displayed
+			    var pOne = $("<p>").text("Rating: " + rating).attr("class", "rating");
 			      
-			      // Displaying the rating
-			      gifDiv.append(pOne);
+			    // Displaying the rating
+			    gifDiv.append(pOne);
 		      
 // GIF IMAGE =======================================================================      
-			      // Retrieving the URL for the image
+			    // Retrieving the URL for the image
 			      			      
-			      var imgURL = results[i].images.fixed_height_still.url;
+			    var imgURL = results[i].images.fixed_height_still.url;
 			      			      
-			      var gifURL = results[i].images.fixed_height.url;
+			    var gifURL = results[i].images.fixed_height.url;
 			      			      
-			      // Creating an element to hold the image
-			      var image = $('<img>').attr("src", imgURL).attr('data-animate', gifURL).attr('data-still', imgURL).attr('data-state', 'still').addClass("gifImage");
+			    // Creating an element to hold the image
+			    var image = $('<img>').attr("src", imgURL).attr('data-animate', gifURL).attr('data-still', imgURL).attr('data-state', 'still').addClass("gifImage");
 		        	      
-			      // Appending the image
-			      gifDiv.append(image);
+			    // Appending the image
+			    gifDiv.append(image);
 			      		      
-			      // Putting the entire gif above the previous gifs
-			      $("#rightContent").prepend(gifDiv);
+			    // Putting the entire gif above the previous gifs
+			    $("#rightContent").prepend(gifDiv);
 			    	 	    	
-		    		} //for loop
+		    	} //for loop
 				
 	    	}); //done
 		
