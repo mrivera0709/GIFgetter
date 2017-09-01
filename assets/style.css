@@ -463,11 +463,13 @@ footer
     #trending
 			{
 			width:100%;
+			padding:15px;
 			}
     
     #gif-input
     	{
-    	width:60%;
+		width:60%;
+		
     	}
     
     #add-gif
