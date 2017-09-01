@@ -326,7 +326,7 @@ img
 
 img:hover
 	{
-	border: 3px solid rgba(240, 88, 117, 1);
+	border: 3px solid rgb(240, 88, 116);
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
@@ -516,6 +516,11 @@ footer
 			{
 			height:0
 			}
+
+		img	
+			{
+			max-width:300px;
+			}
 	}
 	
 @media only screen and (max-width: 387px) 
@@ -526,7 +531,7 @@ footer
     	padding-bottom: 15px
     	}
     	
-    #title1, #title2
+	#title1, #title2
 			{
 			font-size:3em;
 			position:relative;
@@ -542,7 +547,7 @@ footer
 			left:35px;
 			}
     
-    #add-gif
+    	#add-gif
 			{
 			position:relative;
 			top:20px;
